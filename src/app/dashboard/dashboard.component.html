@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row">
+	    <div class="col-md-4" *ngFor="let breed of breed; let index = index">
+	   	<div class="card" style="width: 18rem;">
+	   	  <img class="card-img-top" src="..." alt="Card image cap">
+	   	  <div class="card-body">
+	   	    <h5 class="card-title">{{breed.name}}</h5>
+	   	    <p class="card-text">{{breed.description}}</p>
+	   	    <a href="#" class="btn btn-primary">Learn More</a>
+	   	  </div>
+	   	</div>
+	   	<br>
+	    <div *ngIf="index % 3 == 0">
+	    </div>
+	  </div>
+	</div>
+</div>
