@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  DJANGO_REST_API = 'https://vet-backend.herokuapp.com';
+  DJANGO_REST_API = 'https://vet-panel.herokuapp.com';
 
-// Dependency injection, injected httpClient to send request to Django
+// Dependency injection, injected httpClient to send request to Django App
   constructor(private httpClient: HttpClient) { }
 
   readBreed(): Observable<Breed[]> {
