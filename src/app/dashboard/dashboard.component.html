@@ -1,14 +1,16 @@
 <app-search></app-search>
 <br>
+
 <div class="container">
+	<h1 class="lead text-center">High rated <strong>Vets </strong>arround</h1><br>
 	<div class="row">
 	    <div class="col-md-4" *ngFor="let breed of breed; let index = index">
 	   	<div class="card" style="width: 18rem;">
-	   	  <img class="card-img-top" src="" alt="">
+	   	  <img class="card-img-top" src=""><i class="far fa-meh-blank"></i>
 	   	  <div class="card-body">
 	   	    <h5 class="card-title">{{breed.name}}</h5>
 	   	    <p class="card-text">{{breed.description}}</p>
-	   	    <a href="#" class="btn btn-primary">Learn More</a>
+	   	    <a href="#" class="btn btn-primary">View Profile</a>
 	   	  </div>
 	   	</div>
 	   	<br>
