@@ -1,0 +1,20 @@
+<div class="container">
+  <a style="border-radius: 60px;" routerLink="/post" class="pull-right btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+    Post Incident</a>
+  <div class="row card">
+    <div class="col-md-10">
+      <h3><i class="fa fa-user-circle-o" aria-hidden="true"style="color:#007bff;"></i>
+      </h3>
+      <div class="form-group">
+        <textarea readonly class="form-control" id="exampleFormControlTextarea1" rows="5">
+          This is a textarea where will display incidents, for now is static but it will be requested
+          from a server directly.
+        </textarea>
+        <a class="pull-right" routerLink="/like"><i class="fa fa-thumbs-up" style="font-size: 30px;" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <a style="border-radius: 25px;" class="btn btn-outline btn-primary" routerLink="/reply">Reply</a>
+    </div>
+  </div>
+</div>
