@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { IncidentsComponent } from './incidents/incidents.component';
 import { PostincidentComponent } from './postincident/postincident.component';
+import { VetdetailComponent } from './vetdetail/vetdetail.component';
 
 const routes: Routes = [
 { path: '', component: DashboardComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
 { path: 'login', component: LoginComponent},
 { path: 'profile', component: ProfileComponent},
 { path: 'incidents', component: IncidentsComponent},
-{ path: 'post', component: PostincidentComponent}
+{ path: 'post', component: PostincidentComponent},
+{ path: 'vet-detail', component: VetdetailComponent}
 
 ];
 
