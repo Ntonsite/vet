@@ -7,16 +7,16 @@ import { ProfileComponent } from './profile/profile.component';
 import { IncidentsComponent } from './incidents/incidents.component';
 import { PostincidentComponent } from './postincident/postincident.component';
 import { VetdetailComponent } from './vetdetail/vetdetail.component';
-
+import { VerifyComponent } from './verify/verify.component';
 const routes: Routes = [
 { path: '', component: DashboardComponent},
+{ path: 'verify', component: VerifyComponent},
 { path: 'register', component: RegisterComponent},
 { path: 'login', component: LoginComponent},
 { path: 'profile', component: ProfileComponent},
 { path: 'incidents', component: IncidentsComponent},
 { path: 'post', component: PostincidentComponent},
 { path: 'vet-detail', component: VetdetailComponent}
-
 ];
 
 @NgModule({

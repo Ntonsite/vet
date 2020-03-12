@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { IncidentsComponent } from './incidents/incidents.component';
 import { PostincidentComponent } from './postincident/postincident.component';
 import { VetdetailComponent } from './vetdetail/vetdetail.component';
+import { VerifyComponent } from './verify/verify.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { VetdetailComponent } from './vetdetail/vetdetail.component';
     FooterComponent,
     IncidentsComponent,
     PostincidentComponent,
-    VetdetailComponent
+    VetdetailComponent,
+    VerifyComponent
   ],
   imports: [
     BrowserModule,
