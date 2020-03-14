@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Breed } from './breed';
+import { Vet } from './vet';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -24,5 +25,19 @@ export class ApiService {
   }
   deleteBreed(id: number) {
   return this.httpClient.delete<Breed[]>(`${this.DJANGO_REST_API}/api/breeds/id=${id}`);
+  }
+
+  readVet(): Observable<Vet[]> {
+    return this.httpClient.get<Vet[]>(`${this.DJANGO_REST_API}/api/vets`);
+  }
+
+  createVet(vet: Vet): Observable<Vet[]> {
+  return this.httpClient.post<Vet[]>(`${this.DJANGO_REST_API}/api/vets`, vet); 
+  }
+  updateVet(vet: Vet) {
+  return this.httpClient.put<Vet[]>(`${this.DJANGO_REST_API}/api/vets`, vet);
+  }
+  deleteVet(id: number) {
+  return this.httpClient.delete<Vet[]>(`${this.DJANGO_REST_API}/api/vets/id=${id}`);
   }
 }

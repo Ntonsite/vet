@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { Breed } from '../breed';
+import { Vet } from '../vet';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,16 +9,15 @@ import { Breed } from '../breed';
 })
 export class DashboardComponent implements OnInit {
 
-breed: Breed[];
-selectedBreed: Breed = {id:null, name:null};
+vet: Vet[];
+selectedVet: Vet = {id:null, specialistIn:null, location: null};
 
   constructor(private apiService: ApiService) { }
-
-  ngOnInit() {
-    this.apiService.readBreed().subscribe((breed: Breed[])=>{
-    this.breed = breed;
-    console.log(this.breed);
- });
-  }
+	  ngOnInit() {
+	    this.apiService.readVet().subscribe((vet: Vet[])=>{
+	    this.vet = vet;
+	    console.log(this.vet);
+	 });	
+  	}
 }
 
