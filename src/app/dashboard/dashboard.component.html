@@ -2,20 +2,20 @@
 <br>
 <app-search></app-search>
 <br>
-
 <div class="container">
 	<h1 class="lead text-center">High rated <strong>Vets </strong>arround</h1><br>
 	<div class="row">
 	    <div class="col-md-4" *ngFor="let vet of vet; let index = index">
-	   	<div class="card" style="width: 18rem;">
-	   	  <img style="width:200px; height: 200px;" class="card-img-top" src="assets/img/user.png">
-	   	  <div class="card-body">
-	   	  	<p><strong>Specialist</strong></p>
-	   	    <h5 class="card-title"><i>{{vet.specialistIn}}</i></h5>
-	   	    <p class="card-text">{{vet.description}}</p>
-	   	    <a routerLink="/vet-detail" class="btn btn-primary">View Profile</a>
-	   	  </div>
-	   	</div>
+		   	<div class="card" style="width: 18rem;">
+		   	  <img style="width:200px; height: 200px;" class="card-img-top" src="assets/img/user.png">
+		   	  <div class="card-body">
+		   	  	<p><strong>Specialist</strong></p>
+		   	    <h5 class="card-title"><i>{{vet.specialistIn}}</i></h5>
+		   	    <p class="card-text"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+	            {{vet.location}}</p>
+		   	    <a routerLink="/vet-detail" class="btn btn-primary">View Profile</a>
+		   	  </div>
+		   	</div>
 	   	<br>
 	    <div *ngIf="index % 3 == 0">
 	    </div>
